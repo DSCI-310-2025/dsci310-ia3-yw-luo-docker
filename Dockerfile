@@ -7,3 +7,4 @@ RUN Rscript -e 'install.packages("remotes")' \
     && Rscript -e 'remotes::install_version("cowsay", version = "0.8.0")'
 
 RUN echo "Dockerfile updated!"
+RUN Rscript -e "remotes::install_version('dplyr', version='1.1.4')" # adding a new package
