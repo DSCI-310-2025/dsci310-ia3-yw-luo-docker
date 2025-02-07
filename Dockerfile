@@ -7,6 +7,3 @@ RUN Rscript -e 'install.packages("remotes")' \
     && Rscript -e 'remotes::install_version("cowsay", version = "0.8.0")'
 
 RUN echo "Dockerfile updated!"
-
-# set the default working directory inside the container
-WORKDIR /home/rstudio
