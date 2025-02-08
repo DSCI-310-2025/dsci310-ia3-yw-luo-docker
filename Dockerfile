@@ -8,4 +8,3 @@ RUN Rscript -e 'install.packages("remotes")' \
 
 RUN echo "Dockerfile updated!"
 RUN Rscript -e "remotes::install_version('dplyr', version='1.1.4')" # adding a new package
-RUN Rscript -e "remotes::install_version('ggplot2', version='3.4.0')"
